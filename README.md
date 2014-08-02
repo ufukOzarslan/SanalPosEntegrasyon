@@ -99,8 +99,6 @@ $str = new SanalPos();
 $str->Console("test");
 ````
 
-Bir çok yerde konsol'dan yararlandım. Takibi bu şekilde de yapabilirsiniz. 
-
 ## İletişim
 
 [GitHub! Ufuk Özarslan](http://www.github.com/ufukOzarslan)
