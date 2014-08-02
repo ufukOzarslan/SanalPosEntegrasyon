@@ -15,7 +15,7 @@ class SanalPOS
     public $oid = null; //rand number / şipariş numarası
     public $okUrl = null;
     public $failUrl = null;
-    public $rnd = microtime();
+    public $rnd = null;
     public $storeKey = null;
     public $storeType = '3d';
 
@@ -24,9 +24,9 @@ class SanalPOS
 
     }
 
-    public function __estModelHash( $clientID, $amount, $oid, $okUrl, $failUrl, $storeKey )
+    public function estModelHash( $clientID, $amount, $oid, $okUrl, $failUrl, $storeKey, $rnd )
     {
-        return base64_encode( pack( 'H*', sha1( $clientID . $oid . $amount . $okUrl . $failUrl . $this->rnd . $storeKey ) ) );
+        return base64_encode( pack( 'H*', sha1( $clientID . $oid . $amount . $okUrl . $failUrl . $rnd . $storeKey ) ) );
     }
 
 }
