@@ -103,6 +103,6 @@ Bir çok yerde konsol'dan yararlandım. Takibi bu şekilde de yapabilirsiniz.
 
 ## İletişim
 
-[GitHub! Ufuk Özarslan](www.github.com/ufukOzarslan)
-[E-mail](email:phpyazilim@outlook.com)
-[Skype](skype:herobilisim)
+[GitHub! Ufuk Özarslan](http://www.github.com/ufukOzarslan)
+[E-mail:phpyazilim@outlook.com](https://profile.live.com/cid-de12ddb725bb7690/Messenger)
+
