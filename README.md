@@ -20,6 +20,8 @@ Bu entegrasyon Türkiye'de geçerli birçok bankalarda geçerlidir.
 ## Nasıl Kullanılır? 
 Servisi kullanacağınız size birkaç alternatif bilgi vermektedir. Bu bilgiler doğrultusunda sizden onların belirlemiş olduğu bir kombinasyon ile dataları sizden geri ister. Bu form'da gönderilmesi gerekli bilgiler aşağıda ekliyecegim. **index.php** de gerekli olan birkaç bilgileri bakabilirsiniz.
 
+#### index.php (işlem)
+
 ```
 $clientId    = Banka tarafindan verilen is yeri numarasi
 $amount      = Yapılan İşlem tutarı
@@ -54,4 +56,47 @@ $hash = $sanalpos->estModelHash( $clientId, $amount, $oid, $okUrl, $failUrl, $st
 ```
 **hash** değişkenini bu şekilde alabilirsiniz. **index.php** dosyasında herhangi bir text editörü ile açıp bilgileri düzenleyebilirsiniz.
 
+#### return.php (Sonuç)
 
+Banka servisinden dönen sonuçları almak için bu işlemleri yapmak zorundayız. Çünkü herşey bu obje üzerinden dönmektedir.
+
+
+````
+ $name = Üye iş yeri tarafından açılan pos kullanıcısı
+ $password = Üye iş yeri tarafından açılan pos kullanıcı şifresi
+ $storekey = Yukarıda belirttiğim üzere iş yeri ayiraci (is yeri anahtari)
+ $url = "https://sunucu_adresi/apiserver_path" Banka tarafından verilen CURL'un web servisine bağlandığı adres
+````
+
+> *"https://sunucu_adresi/apiserver_path"* bu adresi banka yetkililerinden istemeyi unutmayınız. Her banka için bu bilgiler değişiklik gösterebilir. 
+
+````
+ require_once ('class.sanalpos.php');
+ $sanalpos = new SanalPOS();
+ $name = "XXXXXXXX";
+ $password = "xxxxxxxxx";
+ $storekey = "XXXX";
+ $url = "https://sunucu_adresi/apiserver_path";
+````
+
+Datayı dizi (array) şeklinde aldırdım. Aşağıda vereceğim kodları kendinize göre uyarlayabilirsiniz. 
+
+````
+$data = $sanalpos->estModelProces($storekey,$name,$password,$url);
+if ( $data['Response'] == 'Approved' ) {
+    echo "Ödeme OK" . $data['TransId'];
+}
+else {
+    echo "Ödeme Alınamadı. Hata" . $data['ErrMsg'];
+}
+````
+
+## NOT:
+
+#### Console
+````
+$str = new SanalPos();
+$str->Console("test");
+````
+
+Bir çok yerde konsol'dan yararlandım. Takibi bu şekilde de yapabilirsiniz. 
