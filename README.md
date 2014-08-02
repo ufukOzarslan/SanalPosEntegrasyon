@@ -3,8 +3,7 @@
 
 Türkiye'de kullanılan birçok bankanın sanal POS'larına kolay entegrasyon amacıyla yayınlanmıştır.
 
-Hangi Bankalarda Geçerlidir ?
-========
+##Hangi Bankalarda Geçerlidir ?
 Bu entegrasyon Türkiye'de geçerli birçok bankalarda geçerlidir. 
 - Ak Bank
 - İş Bankası
