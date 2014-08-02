@@ -55,7 +55,7 @@ $hash = $sanalpos->estModelHash( $clientId, $amount, $oid, $okUrl, $failUrl, $st
     </ul>
 </div>
 <div style="background: lightyellow; border-left: 8px solid yellow; padding: 15px 10px">
-    <form method="post" action="https://<sunucu_adresi>/<3dgate_path>">
+    <form method="post" action="return.php">
         <table cellpadding="0" cellspacing="0">
             <tr>
                 <td>Kredi Kart Numarasi:</td>
