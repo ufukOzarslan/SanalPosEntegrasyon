@@ -91,12 +91,16 @@ else {
 }
 ````
 
-## NOT:
+#### NOT:
 
-#### Console
+##### Console
 ````
 $str = new SanalPos();
 $str->Console("test");
 ````
 
 Bir çok yerde konsol'dan yararlandım. Takibi bu şekilde de yapabilirsiniz. 
+
+## İletişim
+
+
