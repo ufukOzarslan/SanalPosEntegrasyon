@@ -1,6 +1,8 @@
 [PHP] Kolay Sanal Pos Entegrasyon
 ========
 
+![AlloyUI Robo Suit](https://cloud.githubusercontent.com/assets/398893/3529038/980b55ca-0795-11e4-9ffe-2a41953f1df8.jpg)
+
 Türkiye'de kullanılan birçok bankanın sanal POS'larına kolay entegrasyon amacıyla yayınlanmıştır.
 
 ##Hangi Bankalarda Geçerlidir ?
