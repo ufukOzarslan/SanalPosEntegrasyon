@@ -100,7 +100,7 @@ $str->Console("test");
 ````
 
 ## İletişim
-
+[Hublabs Yazılım Ofisi](http://www.hublabs.com.tr)
 [GitHub! Ufuk Özarslan](http://www.github.com/ufukOzarslan)
-[E-mail:phpyazilim@outlook.com](https://profile.live.com/cid-de12ddb725bb7690/Messenger)
+[E-mail:ozarslan@hublabs.com.tr](http://www.github.com/hublabs)
 
