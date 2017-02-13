@@ -1,5 +1,5 @@
 
-[![Hublabs Yazılım Ofisi](http://www.hublabs.com.tr/images/logo-white.png)](http://www.hublabs.com.tr)
+[![Hublabs Yazılım Ofisi](http://www.hublabs.com.tr/images/logo-white.png?v=11323)](http://www.hublabs.com.tr)
 
 [PHP] Kolay Sanal Pos Entegrasyon
 ========
